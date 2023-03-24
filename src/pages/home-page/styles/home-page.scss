@@ -1,60 +1,153 @@
-@import "../../../global-styles/styles/normalize.scss";
-@import "../../../global-styles/styles/root.scss";
-@import "../../../global-styles/styles/fonts.scss";
+@use "../../../global-styles/styles/normalize.scss";
+@use "../../../global-styles/styles/root.scss";
+@use "../../../global-styles/styles/fonts.scss";
 
 $pFontSize: 16px;
 $h2FontSize: 20px;
+$imgsize: 64px;
+$marginSection: 24px;
+$widthContentContainer: 240px;
+$imgMediaSize: 56px;
 
 .home-page {
-  width: 100%;
   min-height: 100vh;
   font-family: 'Dm Sans', sans-serif;
   background-color: var(--color-background);
   color: var(--color-on-surface);
 
-  & &__entry {
-    width: 460px;
-
-    h1 {
+  &_container {
+    padding-top: 159px;
+    margin-left: 152px;
+  
+    &_entry {
+      width: 467px;
+      height: 232px;
+      gap: 24px;
+      letter-spacing: -0.002em;
       font-size: 48px;
+    
+      p {
+        font-size: $pFontSize;
+      }
     }
-
-    p {
-      color: var(--color-on-surface);
-      font-size: 16px;
+    
+    &_sections {
+      width: 700px;
+      padding-left: 103px;
+  
+     &_content-container {
+        width: 268px;
+        background-color: var(--color-element);
+        text-align: center;
+        border-radius: 24px;
+        margin-right: $marginSection;
+        margin-bottom: 31px;
+    
+        h2 {
+          font-size: $h2FontSize;
+        }
+    
+    
+        img {
+          width: $imgsize;
+          height: $imgsize;
+          margin: $marginSection;
+          margin-bottom: 16px;
+    
+        }
+    
+        img:hover {
+          width: 5em;
+        }
+    
+        p {
+          opacity: 0.5;
+          margin: 16px;
+        }
+      }
     }
   }
 
-  & &__sections {
-    width: 40rem;
+  @media screen and (max-width: 1280px) {
+    &_container {
+      margin: 0;
+      justify-content: center;
 
-    & &__contetnt-container {
-      width: 17rem;
-      background-color: var(--color-element);
-      text-align: center;
-      border-radius: 24px;
-      margin: 1em;
-
-      h2 {
-        font-size: 20px;
-      }
-
-
-      img {
-        width: 4em;
-        height: 4em;
-        margin: 2em;
-
-      }
-
-      img:hover {
-        width: 5em;
-      }
-
-      p {
-        opacity: 0.5;
-        margin: 1em;
+      &_sections{
+        width: 680px;
+        padding-left: 80px;
+        }
       }
     }
+
+  @media screen and (max-width: 1024px){
+    &_container{
+      width: 520px;
+      margin: 0 auto;
+      padding-top: 247px;
+
+      &_entry{
+        width: 496px;
+      }
+
+      &_sections{
+        margin-top: $marginSection;
+        padding: 0;
+
+        &_content-container {
+          width: $widthContentContainer;
+          margin: 8px;
+
+          img{
+            width: $imgMediaSize;
+            height: $imgMediaSize;
+            margin: 20px;
+          }
+
+          p{
+            font-size: 14px;
+            line-height: 22px;
+          }
+         }
+      }
+    }
+
+   @media screen and (max-width: 540px) {
+    &_container{
+      padding-top: 48px;
+      width: 343px;
+
+      &_entry{
+        font-size: 48px;
+      }
+
+      &_sections{
+        justify-content: center;
+
+        &_content-container{
+          width: 343px;
+        }
+      }
+    }
+   }
+
+   @media screen and (max-width: 340px) {
+    &_container{
+      width: 280px;
+
+      &_entry{
+        width: 250px;
+      }
+
+      &_sections{
+        width: 250px;
+        
+        &_content-container{
+          width: $widthContentContainer;
+        }
+      }
+    }
+    
+   }
   }
 }

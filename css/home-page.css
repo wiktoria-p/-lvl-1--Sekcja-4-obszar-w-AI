@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -316,44 +316,116 @@ template {
 }
 
 .home-page {
-  width: 100%;
   min-height: 100vh;
   font-family: "Dm Sans", sans-serif;
   background-color: var(--color-background);
   color: var(--color-on-surface);
 }
-.home-page .home-page__entry {
-  width: 460px;
+.home-page_container {
+  padding-top: 159px;
+  margin-left: 152px;
 }
-.home-page .home-page__entry h1 {
+.home-page_container_entry {
+  width: 467px;
+  height: 232px;
+  gap: 24px;
+  letter-spacing: -0.002em;
   font-size: 48px;
 }
-.home-page .home-page__entry p {
-  color: var(--color-on-surface);
+.home-page_container_entry p {
   font-size: 16px;
 }
-.home-page .home-page__sections {
-  width: 40rem;
+.home-page_container_sections {
+  width: 700px;
+  padding-left: 103px;
 }
-.home-page .home-page__sections .home-page .home-page__sections__contetnt-container {
-  width: 17rem;
+.home-page_container_sections_content-container {
+  width: 268px;
   background-color: var(--color-element);
   text-align: center;
   border-radius: 24px;
-  margin: 1em;
+  margin-right: 24px;
+  margin-bottom: 31px;
 }
-.home-page .home-page__sections .home-page .home-page__sections__contetnt-container h2 {
+.home-page_container_sections_content-container h2 {
   font-size: 20px;
 }
-.home-page .home-page__sections .home-page .home-page__sections__contetnt-container img {
-  width: 4em;
-  height: 4em;
-  margin: 2em;
+.home-page_container_sections_content-container img {
+  width: 64px;
+  height: 64px;
+  margin: 24px;
+  margin-bottom: 16px;
 }
-.home-page .home-page__sections .home-page .home-page__sections__contetnt-container img:hover {
+.home-page_container_sections_content-container img:hover {
   width: 5em;
 }
-.home-page .home-page__sections .home-page .home-page__sections__contetnt-container p {
+.home-page_container_sections_content-container p {
   opacity: 0.5;
-  margin: 1em;
+  margin: 16px;
+}
+@media screen and (max-width: 1280px) {
+  .home-page_container {
+    margin: 0;
+    justify-content: center;
+  }
+  .home-page_container_sections {
+    width: 680px;
+    padding-left: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-page_container {
+    width: 520px;
+    margin: 0 auto;
+    padding-top: 247px;
+  }
+  .home-page_container_entry {
+    width: 496px;
+  }
+  .home-page_container_sections {
+    margin-top: 24px;
+    padding: 0;
+  }
+  .home-page_container_sections_content-container {
+    width: 240px;
+    margin: 8px;
+  }
+  .home-page_container_sections_content-container img {
+    width: 56px;
+    height: 56px;
+    margin: 20px;
+  }
+  .home-page_container_sections_content-container p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 540px) {
+  .home-page_container {
+    padding-top: 48px;
+    width: 343px;
+  }
+  .home-page_container_entry {
+    font-size: 48px;
+  }
+  .home-page_container_sections {
+    justify-content: center;
+  }
+  .home-page_container_sections_content-container {
+    width: 343px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 340px) {
+  .home-page_container {
+    width: 280px;
+  }
+  .home-page_container_entry {
+    width: 250px;
+  }
+  .home-page_container_sections {
+    width: 250px;
+  }
+  .home-page_container_sections_content-container {
+    width: 240px;
+  }
 }/*# sourceMappingURL=home-page.css.map */
