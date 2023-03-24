@@ -18,6 +18,7 @@ $imgMediaSize: 56px;
   &_container {
     padding-top: 159px;
     margin: 0 auto;
+    justify-content: center;
   
     &_entry {
       width: 467px;
@@ -84,6 +85,7 @@ $imgMediaSize: 56px;
     &_container{
       width: 520px;
       padding-top: 247px;
+      margin: 0 auto;
 
       &_entry{
         width: 496px;
@@ -140,6 +142,7 @@ $imgMediaSize: 56px;
 
       &_sections{
         width: 250px;
+        margin-top: $marginSection;
         
         &_content-container{
           width: $widthContentContainer;

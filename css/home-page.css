@@ -323,7 +323,8 @@ template {
 }
 .home-page_container {
   padding-top: 159px;
-  margin-left: 152px;
+  margin: 0 auto;
+  justify-content: center;
 }
 .home-page_container_entry {
   width: 467px;
@@ -376,8 +377,8 @@ template {
 @media screen and (max-width: 1024px) {
   .home-page_container {
     width: 520px;
-    margin: 0 auto;
     padding-top: 247px;
+    margin: 0 auto;
   }
   .home-page_container_entry {
     width: 496px;
@@ -424,6 +425,7 @@ template {
   }
   .home-page_container_sections {
     width: 250px;
+    margin-top: 24px;
   }
   .home-page_container_sections_content-container {
     width: 240px;
