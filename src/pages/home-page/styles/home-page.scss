@@ -17,7 +17,7 @@ $imgMediaSize: 56px;
 
   &_container {
     padding-top: 159px;
-    margin-left: 152px;
+    margin: 0 auto;
   
     &_entry {
       width: 467px;
@@ -83,7 +83,6 @@ $imgMediaSize: 56px;
   @media screen and (max-width: 1024px){
     &_container{
       width: 520px;
-      margin: 0 auto;
       padding-top: 247px;
 
       &_entry{
