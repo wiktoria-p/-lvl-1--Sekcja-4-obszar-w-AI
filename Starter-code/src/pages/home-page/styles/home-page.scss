@@ -6,6 +6,11 @@
 @use "../../../global-styles/styles/root.scss";
 
 $margin: 0;
+$mobileWidthSm: 260px;
+$mobileWidth: 343px;
+$h1MobileSize: 32px;
+$pMobileSize: 14px;
+$gapMobile: 16px;
 
 .container{
     background-color: var(--color-background);
@@ -86,11 +91,11 @@ $margin: 0;
         margin-top: 150px;
     
         h1{
-            font-size: 32px;
+            font-size: $h1MobileSize;
         }
     
         p{
-            font-size: 14px;
+            font-size: $pMobileSize;
         }
     }
     
@@ -106,7 +111,7 @@ $margin: 0;
             width: 228px;
     
             p{
-                font-size: 14px;
+                font-size: $pMobileSize;
             }
 
             img{
@@ -144,7 +149,7 @@ $margin: 0;
             width: 268px;
     
             p{
-               font-size: 14px;
+               font-size: $pMobileSize;
             }
         }
     }
@@ -159,23 +164,23 @@ $margin: 0;
         
     }
     .entry{
-        width: 343px;
-        gap: 16px;
+        width: $mobileWidth;
+        gap: $gapMobile;
 
         h1{
-            font-size: 32px;
+            font-size: $h1MobileSize;
             line-height: 40px;
         }
     }
     
     .sections{
-        width: 343px;
-        gap: 16px;  
+        width: $mobileWidth;
+        gap: $gapMobile;  
         margin-bottom: 34px;     
     
         &__content-container{
-            width: 343px;
-            gap: 16px;
+            width: $mobileWidth;
+            gap: $gapMobile;
             padding: 20px;
         }
     }
@@ -183,14 +188,14 @@ $margin: 0;
 
 @media screen and (max-width: 360px) {
     .entry{
-        width: 260px;
+        width: $mobileWidthSm;
     }
     
     .sections{
-        width: 260px;    
+        width: $mobileWidthSm;    
     
         &__content-container{
-            width: 270px;
+            width: $mobileWidthSm;
         }
     }
 }
