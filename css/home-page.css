@@ -319,14 +319,17 @@ body {
 
 h1 {
   font-size: 48px;
+  color: var(--color-on-surface);
 }
 
 h2 {
   font-size: 20px;
+  color: var(--color-on-surface);
 }
 
 p {
-  font-size: 16px;
+  font-size: 16px;\
+  color: var(--color-on-surface);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
