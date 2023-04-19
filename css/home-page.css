@@ -673,8 +673,8 @@ p {
 }
 
 .sections {
-  width: 650px;
-  gap: 28px;
+  gap: 24px;
+  width: 560px;
 }
 .sections__content-container {
   width: 268px;
@@ -702,13 +702,10 @@ p {
   .container {
     gap: 60px;
   }
-  .sections {
-    width: 650px;
-  }
 }
 @media screen and (max-width: 1024px) {
   .container {
-    padding: 0;
+    padding: 48px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
@@ -741,6 +738,7 @@ p {
 }
 @media screen and (max-width: 540px) {
   .container {
+    padding: 0;
     margin: 48px auto 48px auto;
     width: 343px;
   }
