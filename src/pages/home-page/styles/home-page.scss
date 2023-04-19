@@ -74,21 +74,11 @@ $gap2: 16px;
   }
   
   .sections{
-    width: 590px;
+    width: 650px;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .entry{
-    width: 320px;
-
-    h1{
-      font-size: $h1MobileSie;
-    }
-  }
-}
-
-@media screen and (max-width: 912px){
+@media screen and (max-width: 1024px){
   .container{
     padding: 0;
     flex-wrap: wrap;
