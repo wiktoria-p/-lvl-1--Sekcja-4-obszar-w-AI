@@ -26,9 +26,13 @@ main {
   display: block;
 }
 
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
 h1 {
-  font-size: 48px;
-  margin: 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -294,15 +298,6 @@ summary {
  * Add the correct display in IE 10+.
  */
 template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}/*# sourceMappingURL=normalize.css.map */late {
   display: none;
 }
 
