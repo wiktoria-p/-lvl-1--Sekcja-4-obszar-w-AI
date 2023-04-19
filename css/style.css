@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -27,9 +27,13 @@ main {
   display: block;
 }
 
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
 h1 {
-  font-size: 48px;
-  margin: 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -307,25 +311,26 @@ template {
 
 :root {
   --color-background: #0F162D;
-  --color-on-surface: #fff;
-  --color-background-of-element: #272D42;
+  --color-on-surface: white;
+  --color-element: #272D42;
 }
 
 body {
   font-family: "DM Sans", sans-serif;
+  background-color: var(--color-background);
   color: var(--color-on-surface);
 }
 
 h1 {
   font-size: 48px;
+  margin: 0;
 }
 
 h2 {
-  font-size: 20px;
+  margin: 0;
 }
 
 p {
-  font-size: 16px;
-}/*# sourceMappingURL=style.css.map */p {
   color: var(--color-on-surface);
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
